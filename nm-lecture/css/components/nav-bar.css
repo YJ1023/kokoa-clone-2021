@@ -1,0 +1,18 @@
+/*styles.css에 @import "components/nav-bar.css" 잊지 말기
+    <head>에 링크 안걸고 css에 @import 하여서 사용 중
+*/
+
+/*nav__btn은 <i>아이콘 </i>을 보여주고있고, <a>는 아이콘에 하이퍼링크
+따라서, 아이콘들을 가로 배열 하려면 아이콘들의 부모인 nav__list에 display:flex; 
+
+<li>web</li>    >>>> 웹 화면에 web글씨 나타남.
+*/
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 40px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
