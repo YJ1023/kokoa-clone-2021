@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats</title>
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <div class="status-bar__uplus">
+          <span>U</span>
+          <i class="fas fa-plus"></i>
+        </div>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__i__talk">Talk</span>
+        <span class="status-bar__youtube">
+          <i class="fas fa-play"></i>
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">00:00</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-bell"></i>
+        <div class="status-bar__lte">
+          <span class="status-bar__lte__text">lte</span>
+          <i class="fas fa-exchange-alt"></i>
+        </div>
+        <i class="fas fa-signal"></i>
+        <span class="status-bar__column__percent">56%</span>
+        <i class="fas fa-battery-half"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search"></i></span>
+        <span><i class="fas fa-comment-dots"></i></span>
+        <span><i class="fas fa-music"></i></span>
+        <span><i class="fas fa-cog"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-screen__margin-top">
+      <div class="user-component chats__ad">
+        <a href="#"><img src="#" /></a>
+      </div>
+      <a class="chat-link" href="#"
+        ><div class="user-component chats__first-user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="#"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">KokoaTalk</h4>
+              <h6 class="user-component__subtitle">
+                Please check My Kokoa Account Info
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column user-component__column__right">
+            <span class="user-component__time">21:22</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+      <a class="chat-link" href="#"
+        ><div class="user-component chats__first-user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="#"
+            />
+            <div class="user-component__text group-chats">
+              <h4 class="user-component__title">
+                <span class="group-chats__i-comments"
+                  ><i class="fas fa-comments"></i
+                ></span>
+                <span>KokoaTalk</span>
+                <span class="group-chats__num">1783</span>
+                <i class="fas fa-bell-slash"></i>
+              </h4>
+              <h6 class="user-component__subtitle">
+                Please check My Kokoa Account Info
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column user-component__column__right">
+            <span class="user-component__time">15:39</span>
+            <div class="badge">2</div>
+          </div>
+        </div>
+      </a>
+      <a class="chat-link" href="#"
+        ><div class="user-component chats__first-user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="#"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">KokoaTalk</h4>
+              <h6 class="user-component__subtitle">
+                Please check My Kokoa Account Info
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column user-component__column__right">
+            <span class="user-component__time">02.10</span>
+            <!--<div class="badge"></div>-->
+          </div>
+        </div>
+      </a>
+      <a class="chat-link" href="#"
+        ><div class="user-component chats__first-user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="#"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">KokoaTalk</h4>
+              <h6 class="user-component__subtitle">
+                Please check My Kokoa Account Info
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column user-component__column__right">
+            <span class="user-component__time">02.08</span>
+            <!--<div class="badge"></div>-->
+          </div>
+        </div>
+      </a>
+    </main>
+    <!--
+        <nav>
+            <ul>
+                <li></li>
+            </ul>
+        </nav>
+    nav는 현재 페이지 내 또는 다른 펟이지로의 링크를 나타내는 구획
+        보통 ul과 자주 쓰임
+        li는 a(anchor)를 가짐
+    단축키   nav>ul>li*4>a 를 쓰면 빠르게 만들 수 있음
+    -->
+    <nav class="nav-bar">
+      <ul class="nav-bar__list">
+        <li class="nav-bar__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav-bar__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">3</span>
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav-bar__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav-bar__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__more__new"></span>
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="clock.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

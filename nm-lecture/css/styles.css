@@ -10,11 +10,19 @@
 /*components*/
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
-
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
 /*screens*/
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
+  color: #2e363e;
   font-family: "Source Sans Pro", sans-serif;
   /* margin: 0; ==>> reset.css이용하면 대부분의 margin,padding,border를 0으로 자동으로 해줌*/
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }

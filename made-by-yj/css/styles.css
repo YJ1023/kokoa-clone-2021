@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+/*component*/
+@import "components/status-bar.css";
+@import "components/screen-header.css";
+@import "components/nav-bar.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/ad.css";
+/*screen*/
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/chats.css";
+
+/**/
+body {
+  color: #7e7e7e;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-screen {
+  padding: 0px var(--main-screen-padding);
+}
+
+.main-screen__margin-top {
+  margin-top: 120px;
+}

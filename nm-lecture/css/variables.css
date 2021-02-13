@@ -1,5 +1,6 @@
 :root {
   --yellow: #fae100;
+  --horizontal-space: 25px;
 }
 /*:root 사이에 뛰어쓰기 없이 붙여 적어야 함.*/
 /*:root 이용해 전역변수 선언

@@ -1,0 +1,115 @@
+.status-bar {
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--status-bar__background-color);
+}
+.status-bar__column {
+  width: 33.3%;
+  display: flex;
+}
+
+.status-bar__column:nth-child(2) {
+  justify-content: center;
+}
+
+.status-bar__column:last-child {
+  justify-content: flex-end;
+}
+
+.status-bar__column {
+  color: var(--status-bar__icon-color);
+  display: flex;
+  align-items: center;
+}
+/*
+
+status-bar-left
+*/
+.status-bar__uplus {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 5px;
+}
+.status-bar__uplus .fa-plus {
+  font-size: 5px;
+}
+.status-bar__column .fa-wifi {
+  font-size: 13px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.status-bar__i__talk {
+  box-sizing: border-box;
+  padding: 3px;
+  padding-right: 4px;
+  font-size: 3px;
+  background-color: var(--status-bar__icon-color);
+  color: var(--status-bar__icon-inside-color);
+  border-radius: 5px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.status-bar__youtube {
+  box-sizing: border-box;
+  padding: 3px 6px;
+  background-color: var(--status-bar__icon-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-bar__youtube .fa-play {
+  color: var(--status-bar__icon-inside-color);
+  font-size: 5px;
+  padding-left: 1px;
+  box-sizing: border-box;
+}
+/*
+
+status-bar-right
+*/
+.status-bar__column .fa-battery-half {
+  margin: 0 5px;
+  color: var(--battery);
+}
+.status-bar__column .fa-bolt {
+  color: var(--battery);
+}
+
+.status-bar__column .fa-signal {
+  margin: 0px 5px;
+}
+.status-bar__lte {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+.status-bar__lte .fa-exchange-alt {
+  font-size: 5px;
+}
+.status-bar__lte__text {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+/*
+
+fixed
+*/
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*
+
+
+*/

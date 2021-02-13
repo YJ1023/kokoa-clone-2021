@@ -1,0 +1,39 @@
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 20px 10.5%;
+  box-sizing: border-box;
+
+  background-color: var(--status-bar__background-color);
+}
+.nav-bar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar__btn .nav__link {
+  color: var(--nav__btn__icon-color);
+  font-size: 30px;
+
+  position: relative;
+}
+
+.nav__notification {
+  position: absolute;
+  left: 20px;
+  bottom: 17px;
+}
+
+.nav__more__new {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+
+  right: -8px;
+  top: 2px;
+}

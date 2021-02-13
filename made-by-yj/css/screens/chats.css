@@ -1,0 +1,20 @@
+.group-chats .user-component__title {
+  display: flex;
+  align-items: center;
+}
+
+.group-chats__i-comments {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.group-chats .fa-bell-slash,
+.group-chats__num {
+  margin-left: 5px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
