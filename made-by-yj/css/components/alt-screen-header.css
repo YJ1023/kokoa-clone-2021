@@ -30,3 +30,6 @@
 .alt-header__column:last-child {
   margin-left: auto;
 }
+.settings__border-bar {
+  width: 100%;
+}
