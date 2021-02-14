@@ -1,0 +1,32 @@
+.alt-header {
+  width: 100%;
+  position: fixed;
+  top: 30px;
+  box-sizing: border-box;
+  padding: var(--main-screen-padding);
+
+  background-color: var(--screen-header__background-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alt-header__column .fa-chevron-left {
+  font-size: 30px;
+}
+.alt-header__column .fa-search,
+.alt-header__column .fa-bars {
+  font-size: 25px;
+}
+.alt-header__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+.alt-header__column:last-child {
+  margin-left: auto;
+}

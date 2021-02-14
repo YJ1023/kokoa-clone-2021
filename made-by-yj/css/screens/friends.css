@@ -6,10 +6,10 @@
 
   background-color: #fafafa;
   padding: 15px 0;
-  font-size: 18px;
-  margin-bottom: 10px;
 
-  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 #friends-display-link i {
@@ -26,7 +26,7 @@
 
 .friends-screen__channel {
   margin-top: 25px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--border-color);
   padding-top: 15px;
 }
 .friends-screen__channel__header {
@@ -58,8 +58,10 @@
 }
 .friends__profile-btn .user-component__column:last-child span {
   border: 2px solid turquoise;
+
   border-radius: 30px;
   font-size: 15px;
+  font-weight: 300;
   padding: 10px 20px;
 }
 

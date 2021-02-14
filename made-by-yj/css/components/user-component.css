@@ -17,7 +17,7 @@
   border-radius: 25px;
   margin-right: 20px;
 
-  border: 1px solid tomato;
+  border: var(--img-border-color);
 }
 
 .user-component__avatar--xl {
@@ -45,6 +45,7 @@
 .user-component__subtitle {
   margin-top: 5px;
   font-size: 17px;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -60,4 +61,17 @@
 .user-component__time {
   display: block;
   margin-bottom: 10px;
+  font-weight: 300;
+}
+/*
+
+*/
+.user-component__subtitle .fa-exclamation-circle {
+  font-size: 17px;
+  margin-left: 3px;
+  color: tomato;
+}
+.user-component__column:last-child .fa-comment-alt {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.7);
 }

@@ -1,0 +1,27 @@
+.icon-raw {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.icon-raw__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+}
+
+.icon-raw__icon i:not(.fa-address-book) {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.icon-raw__icon span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.fa-address-book {
+  font-size: 30px;
+  margin-bottom: 12px;
+}

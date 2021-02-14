@@ -1,0 +1,249 @@
+.more__wallet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed skyblue;
+  background-color: thistle;
+  height: 70px;
+  border-radius: 5px;
+}
+.more__wallet__bold {
+  font-weight: bold;
+}
+.more__wallet__text {
+  height: 23px;
+  display: flex;
+  align-items: center;
+
+  font-weight: 300;
+  font-size: 15px;
+}
+.more__wallet__i {
+  padding: 5px 7px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  border: var(--border-color);
+  font-size: 10px;
+  margin-left: 5px;
+}
+/*
+  
+  
+  */
+.more__pay {
+  padding: 15px 10px;
+  height: 70px;
+  box-sizing: border-box;
+  border-bottom: var(--border-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more__pay__btn {
+  border: var(--border-color);
+  padding: 5px 15px;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.more__pay__text-bold {
+  margin: 0 3px;
+  font-weight: 500;
+  font-size: 17px;
+
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+.more__pay__btn:last-child {
+  font-size: 14px;
+}
+
+.more__pay__column:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.more__pay__column:last-child span {
+  font-size: 15px;
+}
+/*
+  
+  */
+
+.more-suggestions {
+  margin-top: 50px;
+  border-top: var(--border-color);
+  padding-top: 40px;
+}
+.more-suggestions__title {
+  margin-bottom: 30px;
+}
+
+.more-suggestions__icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.more-suggestions__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+.more-suggestions__icon-img {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.dog {
+  background-color: rgb(201, 185, 134);
+}
+.bird {
+  background-color: #54acee;
+}
+.bear {
+  background-color: rgb(145, 98, 64);
+}
+.more-suggestions__icon-img i {
+  font-size: 32px;
+  color: white;
+}
+.more-suggestions__icon-text {
+  font-size: 15px;
+}
+/*
+
+*/
+.more__emotions-i {
+  position: relative;
+}
+.more__emotions__new {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: -5px;
+}
+/*
+
+*/
+.more__weather-border {
+  border-top: var(--border-color);
+}
+.more__weather {
+  padding: 40px 0px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  height: 200px;
+}
+.more__weather__city {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+.more__weather__content {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather__content__column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather__content__column:last-child span {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: var(--border-color);
+}
+.weather__content__column .fa-crosshairs {
+  font-size: 20px;
+  opacity: 0.9;
+}
+.weather__content__column:first-child i {
+  font-size: 40px;
+  color: black;
+}
+.weather__content__num {
+  font-size: 40px;
+  margin: 0 10px;
+}
+.weather__content__text,
+.weather__content__m {
+  font-size: 15px;
+}
+.weather__content__m {
+  margin-top: 10px;
+}
+.weather-seoul .weather__content__m span:last-child {
+  color: rgb(0, 192, 80);
+  font-weight: bold;
+}
+.weather-busan .weather__content__m span:last-child {
+  color: rgb(0, 255, 242);
+  font-weight: bold;
+}
+.weather__content__meonji {
+  opacity: 0.7;
+}
+/*
+
+
+*/
+.more__weather__position {
+  position: relative;
+}
+.more__weather {
+  background-color: white;
+  animation: weather 6s linear infinite;
+}
+.weather-busan {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.weather-seoul {
+  animation-delay: 3s;
+}
+
+@keyframes weather {
+  0% {
+    transform: rotateX(0deg);
+    /*transform: scale(1);*/
+  }
+  25% {
+    transform: rotateX(-90deg);
+    /*transform: scale(0);*/
+  }
+  50% {
+    transform: rotateX(-90deg);
+    /*transform: scale(0);*/
+  }
+  80% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+    /*transform: scale(1);*/
+  }
+}

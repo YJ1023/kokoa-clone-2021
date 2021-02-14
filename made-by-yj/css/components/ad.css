@@ -9,5 +9,5 @@
   height: 90px;
   border-radius: 20px;
 
-  border: 1px solid tomato;
+  border: var(--img-border-color);
 }
