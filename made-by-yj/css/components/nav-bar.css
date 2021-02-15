@@ -37,3 +37,59 @@
   right: -8px;
   top: 2px;
 }
+/*
+
+*/
+.nav__link {
+  color: #2e363e;
+
+  position: relative;
+}
+
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+.nav-bar__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+.nav-bar__btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.nav-bar__btn:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.nav-bar__btn:last-child {
+  animation-delay: 0.8s;
+}
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav-bar__btn i:hover,
+.nav__notification:hover {
+  color: tomato;
+  transform: scale(1.1);
+}

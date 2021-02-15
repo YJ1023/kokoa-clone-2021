@@ -1,10 +1,11 @@
 #chat-screen {
-  background-color: var(--chat-background-color);
-  height: 10000px;
+  background-color: none;
+  background-color: rgb(204, 230, 215);
+  height: 500vh;
 }
 #chat-screen .status-bar,
 #chat-screen .alt-header {
-  background-color: var(--chat-background-color);
+  background-color: rgb(204, 230, 215);
 }
 /*
 */
@@ -103,8 +104,6 @@
   width: 90%;
 
   position: relative;
-
-  margin-right: 10px;
 }
 .reply input {
   padding: 10px;
@@ -143,4 +142,103 @@
 }
 .reply__column button i {
   opacity: 1;
+}
+/*
+
+
+*/
+#chat-screen .status-bar {
+  z-index: 2;
+}
+#chat-screen .alt-header {
+  z-index: 1;
+}
+.talk-animation--time {
+  opacity: 0;
+  animation: fadeIn 0.5s linear forwards;
+}
+.talk-animation {
+  opacity: 0;
+  animation: fadeLeft 0.5s linear forwards;
+}
+.talk-animation--own {
+  opacity: 0;
+  animation: fadeRight 0.5s linear forwards;
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/*
+
+*/
+.ani-delay:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.ani-delay:nth-child(3) {
+  animation-delay: 1s;
+}
+.ani-delay:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.ani-delay:nth-child(5) {
+  animation-delay: 2s;
+}
+.ani-delay:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+/*
+
+
+*/
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-grin-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply:focus-within input {
+  width: 90vw;
+  transform: translateX(-13%) translateY(-80px);
+}
+.reply input {
+  transition: all 0.3s ease-in-out;
+}
+.reply .reply__column:first-child,
+.reply .fa-grin-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+.reply {
+  transition: transform 0.3s ease-in-out;
+}
+.reply:focus-within {
+  transform: translateY(80px);
 }

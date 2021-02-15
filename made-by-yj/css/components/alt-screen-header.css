@@ -28,6 +28,7 @@
 .alt-header__title {
   font-size: 30px;
   font-weight: 700;
+  color: white;
 }
 
 .alt-header__column:first-child {
@@ -47,4 +48,16 @@
 */
 .alt-header__column span:last-child {
   margin-left: 20px;
+}
+/*
+
+*/
+.alt-header i:hover {
+  cursor: pointer;
+  color: var(--hover-bar-icon);
+}
+
+.alt-header i:hover,
+.alt-header__title:hover {
+  transform: scale(1.1);
 }

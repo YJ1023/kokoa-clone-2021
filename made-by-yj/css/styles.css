@@ -25,11 +25,25 @@
 @import "screens/splashscreen.css";
 
 /**/
+
 body {
   color: var(--basic-text-color);
   font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    rgba(236, 119, 192, 0.5),
+    rgba(129, 177, 180, 0.5),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255)
+  );
+  background-repeat: no-repeat;
 }
+/*
 
+
+
+
+
+*/
 .main-screen {
   padding: 0px var(--main-screen-padding);
 }

@@ -114,3 +114,37 @@ fixed
 
 
 */
+.status-bar__column .fa-bell {
+  animation: bell 4s ease-in-out infinite;
+}
+@keyframes bell {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.status-bar__column .fa-wifi,
+.status-bar__column .fa-signal,
+.status-bar__column .fa-bolt {
+  animation: bolt-blink 2.5s ease-in-out infinite;
+}
+.status-bar__column .fa-wifi,
+.status-bar__column .fa-signal {
+  animation: bolt-blink 2s linear infinite;
+}
+@keyframes bolt-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

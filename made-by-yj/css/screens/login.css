@@ -104,14 +104,25 @@
 .login-form__sign-up__span:hover {
   background-color: var(--login-input-btn__hover__background-color);
   color: var(--login-input-btn__hover__text-color);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
 }
+
 .login-form__sign-up a:last-child:hover {
-  border-radius: 10px;
-  border-top-left-radius: 0px;
-
-  padding: 5px;
-
-  border: 1px solid var(--login-input-btn__hover__background-color);
+  font-weight: 500;
+  font-size: 25px;
+  color: rgb(80, 253, 166);
 }
 /*
 */
+.login-form input {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.login-form input,
+.login-form__sign-up a:last-child,
+.login-form input[type="submit"],
+.login-form__sign-up__span {
+  will-change: transition;
+  transition: all 1s ease-in-out;
+}

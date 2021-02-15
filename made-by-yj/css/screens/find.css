@@ -143,3 +143,56 @@
 .open-post:last-child {
   margin-bottom: 70px;
 }
+/*
+*/
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  /*그래픽카드를 이용해서 애니메이션 가속화.
+  브라우저에게 미리 변화를 알려주어, 애니메이션이 더 잘 작동*/
+  animation: heartBeat 1s linear infinite;
+}
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: -20px -20px 20px rgba(0, 0, 0, 0.5);
+}
+.open-post {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  animation: open-post-hover 2s ease-in-out forwards;
+}
+.open-post:nth-child(5) {
+  animation-delay: 1s;
+}
+.open-post:last-child {
+  animation-delay: 2s;
+}
+@keyframes open-post-hover {
+  0% {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

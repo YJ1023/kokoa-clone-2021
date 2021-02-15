@@ -1,37 +1,37 @@
 :root {
-  --battery: rgb(114, 240, 192);
+  --battery: yellow;
   --status-bar__icon-color: white;
-  --status-bar__icon-inside-color: rgba(0, 0, 0, 0.5);
-  --status-bar__background-color: teal;
+  --status-bar__icon-inside-color: rgba(0, 0, 0, 0.61);
+  --status-bar__background-color: rgb(204, 230, 215);
   /*
-
-
+rgb(204, 230, 215)
+rgb(143, 113, 132);
   Welcome-login-form
   */
-  --login__welcome-title-color: rgb(95, 95, 110);
-  --login__welcome-text-color: rgba(0, 0, 0, 0.5);
-  --login-form__input__text-border-bottom-color: rgba(0, 0, 0, 0.2);
-  --login-form__placeholder-color: rgba(0, 0, 0, 0.2);
+  --login__welcome-title-color: rgb(255, 255, 255);
+  --login__welcome-text-color: rgb(240, 240, 240);
+  --login-form__input__text-border-bottom-color: skyblue;
+  --login-form__placeholder-color: rgb(194, 194, 194);
 
-  --login-input__submit-text-color: teal;
-  --login-input__submit-background-color: rgb(186, 218, 245);
-  --login-a-color: teal;
+  --login-input__submit-text-color: white;
+  --login-input__submit-background-color: skyblue;
+  --login-a-color: turquoise;
 
-  --login-input-text__focus-color: violet;
-  --login-input-btn__hover__background-color: violet;
+  --login-input-text__focus-color: rgb(80, 253, 166);
+  --login-input-btn__hover__background-color: rgb(226, 177, 255);
   --login-input-btn__hover__text-color: white;
   /*
 
 
   nav-bar
   */
-  --nav__btn__icon-color: rgb(43, 43, 82);
+  --nav__btn__icon-color: rgb(255, 255, 255);
   /*
   
   screen-header
   */
   --main-screen-padding: 25px;
-  --screen-header__background-color: thistle;
+  --screen-header__background-color: rgb(204, 230, 215);
   /*
   
   */
@@ -39,12 +39,15 @@
   --basic-text-color: #414141;
   /*
 */
-  --img-border-color: 1px solid tomato;
+  --img-border-color: none;
   --yellow: #fae100;
   /*
   */
   --chat-background-color: #abc1d1;
   --message__bubble: rgb(255, 215, 215);
   --message__bubble--own: #c0ffa3;
-  --chat-input-btn: rgb(8, 255, 255);
+  --chat-input-btn: #fae100;
+  /*
+  */
+  --hover-bar-icon: orange;
 }
