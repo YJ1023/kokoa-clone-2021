@@ -1,47 +1,22 @@
-#friends-display-link {
-  display: block;
-  text-align: center;
-  background-color: #fafafa;
-  padding: 15px 0;
-  font-size: 18px;
-  margin-bottom: 10px;
-
-  margin-top: -15px;
+.friends-splash-screen {
+  padding-bottom: 110px;
 }
 
-#friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.friends-screen__channel {
-  margin-top: 25px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  padding-top: 15px;
-}
-.friends-screen__channel-header {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-  color: rgba(0, 0, 0, 0.5);
-}
-/*
-
-
-
-*/
 #splash-screen {
   background-color: var(--yellow);
   position: absolute;
+  top: 0;
   width: 100vw; /*100vh는 화면의 전체 넓이의 100%*/
   height: 100vh; /*100vw는 화면의 전체 높이의 100%*/
-  top: 0;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
   font-size: 132px;
 
   animation: hideSplashScreen 1s ease-in-out forwards;
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 } /*forwards는 애니메이션 마지막 속성값 유지*/
 @keyframes hideSplashScreen {
   from {

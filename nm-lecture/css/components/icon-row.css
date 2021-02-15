@@ -1,17 +1,17 @@
-.icon-raw {
+.icon-row {
   display: flex;
   justify-content: space-between;
 }
 
-.icon-raw__icon {
+.icon-row__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.icon-raw__icon i {
+.icon-row__icon i {
   font-size: 35px;
 }
-.icon-raw__icon span {
+.icon-row__icon span {
   margin-top: 18px;
 }

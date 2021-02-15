@@ -1,7 +1,9 @@
 ::-webkit-scrollbar {
   width: 5px;
 } /* 스크롤 바 */
-
+::-webkit-scrollbar:horizontal {
+  height: 0;
+}
 ::-webkit-scrollbar-track {
   background-color: yellow;
 } /* 스크롤 바 밑의 배경 */

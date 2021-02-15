@@ -1,9 +1,9 @@
-.icon-raw {
+.icon-row {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
 }
-.icon-raw__icon {
+.icon-row__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,11 +12,11 @@
   width: 20%;
 }
 
-.icon-raw__icon i:not(.fa-address-book) {
+.icon-row__icon i:not(.fa-address-book) {
   font-size: 30px;
   margin-bottom: 20px;
 }
-.icon-raw__icon span {
+.icon-row__icon span {
   font-size: 15px;
   font-weight: 500;
 }
@@ -24,4 +24,20 @@
 .fa-address-book {
   font-size: 30px;
   margin-bottom: 12px;
+}
+
+/*
+*/
+.more__i {
+  position: relative;
+}
+.more__i__new {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: -5px;
 }

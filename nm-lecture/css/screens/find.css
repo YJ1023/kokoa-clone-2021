@@ -96,3 +96,26 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+/*
+
+*/
+.open-post__heart-count:hover i {
+  will-change: transform;
+  /*그래픽카드를 이용해서 애니메이션 가속화.
+  브라우저에게 미리 변화를 알려주어, 애니메이션이 더 잘 작동*/
+  animation: heartBeat 1s linear infinite;
+}
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}

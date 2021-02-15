@@ -36,9 +36,15 @@
   
   */
   --border-color: 1px solid rgba(0, 0, 0, 0.2);
-
+  --basic-text-color: #414141;
   /*
 */
   --img-border-color: 1px solid tomato;
   --yellow: #fae100;
+  /*
+  */
+  --chat-background-color: #abc1d1;
+  --message__bubble: rgb(255, 215, 215);
+  --message__bubble--own: #c0ffa3;
+  --chat-input-btn: rgb(8, 255, 255);
 }

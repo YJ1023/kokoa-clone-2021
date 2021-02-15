@@ -1,58 +1,17 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
+  background-color: var(--chat-background-color);
+  height: 10000px;
 }
 #chat-screen .status-bar,
 #chat-screen .alt-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-sizing: border-box;
-
-  background-color: #abc1d1;
-}
-#chat-screen .alt-header {
-  top: 10px;
+  background-color: var(--chat-background-color);
 }
 /*
-
-
-
-
 */
 .main-chat {
-  margin-top: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  animation: fadeIn 0.3s linear;
-}
-@keyframes fadeIn {
-  to {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  from {
-    transform: none;
-    opacity: 1;
-  }
-}
-
-/*
-
-
-
-z-index로 레이어
-숫자가 작을수록 밑에 있음
-absolute position이나 fixed position에 대해 설정 가능
-
-*/
-#chat-screen .status-bar {
-  z-index: 2;
-}
-#chat-screen .alt-header {
-  z-index: 1;
 }
 /*
 
@@ -61,15 +20,17 @@ absolute position이나 fixed position에 대해 설정 가능
 .chat__timestamp {
   color: white;
   background-color: #92a4b2;
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 25px;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 300;
   margin-bottom: 25px;
+  margin-top: 10px;
 }
 /*
-
-
-*/
+  
+  
+  */
 .message-row {
   width: 100%;
   display: flex;
@@ -78,8 +39,10 @@ absolute position이나 fixed position에 대해 설정 가능
 .message-row img {
   width: 45px;
   height: 45px;
-  border-radius: 50%;
+  border-radius: 20px;
   margin-right: 10px;
+
+  border: var(--img-border-color);
 }
 .message__author {
   display: block;
@@ -90,7 +53,7 @@ absolute position이나 fixed position에 대해 설정 가능
   align-items: flex-end;
 }
 .message__bubble {
-  background-color: white;
+  background-color: var(--message__bubble);
   padding: 13px;
   font-size: 18px;
   margin-right: 5px;
@@ -103,32 +66,19 @@ absolute position이나 fixed position에 대해 설정 가능
   font-size: 13px;
 }
 /*
-
-*/
+  
+  */
 .message-row--own {
   justify-content: flex-end;
 }
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: var(--message__bubble--own);
   border-top-right-radius: 0px;
   border-top-left-radius: 15px;
 
   margin-right: 0;
   margin-left: 5px;
 }
-
-/*
-flex children에게 order를 주면 순서를 바꿀 수 있다.
-
-.message-row--own .message__bubble {
-  order: 1;
-}
-.message-row--own .message__time {
-  order: 0;
-}
-
-row-reverse 사용결과와 같음
-*/
 .message-row--own .message__info {
   flex-direction: row-reverse;
 }
@@ -160,15 +110,15 @@ row-reverse 사용결과와 같음
   padding: 10px;
   width: 100%;
 
-  border: var(--main-border);
+  border: var(--border-color);
   border-radius: 20px;
 }
 
 .reply .reply__column:last-child > i,
 .reply .reply__column:last-child button {
   position: absolute;
-  right: -18px;
-  top: 3px;
+  right: -19px;
+  top: 3.49px;
 }
 .reply .reply__column:last-child > i {
   right: 25px;
@@ -177,7 +127,7 @@ row-reverse 사용결과와 같음
 }
 
 .reply__column button {
-  background-color: var(--yellow);
+  background-color: var(--chat-input-btn);
   border: none;
   width: 30px;
   height: 30px;
@@ -193,32 +143,4 @@ row-reverse 사용결과와 같음
 }
 .reply__column button i {
   opacity: 1;
-}
-/*
-
-:focus-within은 내부에 어떤 element가 focus되어 있다면
-*/
-
-.reply:focus-within .reply__column:first-child,
-.reply:focus-within .fa-grin-wink,
-.reply:focus-within button {
-  opacity: 0;
-}
-.reply:focus-within input {
-  width: 98vw;
-  transform: translateX(-13%) translateY(-80px);
-}
-.reply input {
-  transition: all 0.3s ease-in-out;
-}
-.reply .reply__column:first-child,
-.reply .fa-grin-wink,
-.reply button {
-  transition: opacity 0.3s ease-in-out;
-}
-.reply {
-  transition: transform 0.3s ease-in-out;
-}
-.reply:focus-within {
-  transform: translateY(80px);
 }

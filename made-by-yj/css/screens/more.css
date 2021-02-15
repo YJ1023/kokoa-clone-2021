@@ -125,19 +125,7 @@
 /*
 
 */
-.more__emotions-i {
-  position: relative;
-}
-.more__emotions__new {
-  background-color: tomato;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: -5px;
-}
+
 /*
 
 */
@@ -145,7 +133,7 @@
   border-top: var(--border-color);
 }
 .more__weather {
-  padding: 40px 0px;
+  padding: 40px 5px;
   box-sizing: border-box;
   margin-bottom: 50px;
   height: 200px;

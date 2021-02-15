@@ -13,9 +13,9 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
-@import "components/icon-raw.css";
-@import "compoonents/alt-screen-header.css"; /*alternative screen header*/
-
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css"; /*alternative screen header*/
+@import "components/no-mobile.css";
 /*screens*/
 @import "screens/login.css";
 @import "screens/friends.css";

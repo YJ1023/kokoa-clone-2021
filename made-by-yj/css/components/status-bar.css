@@ -51,6 +51,7 @@ status-bar-left
   background-color: var(--status-bar__icon-color);
   color: var(--status-bar__icon-inside-color);
   border-radius: 5px;
+  border-bottom-left-radius: 0px;
   font-weight: 500;
   margin-right: 5px;
 }
