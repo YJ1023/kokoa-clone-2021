@@ -48,3 +48,20 @@
   display: flex;
   align-items: center;
 }
+/**/
+.settings__setting {
+  transition: all 0.2s ease-in-out;
+}
+.settings__setting:hover {
+  cursor: pointer;
+  color: tomato;
+  background-color: white;
+  opacity: 0.8;
+  padding: 35px;
+  transform: translateX(30px);
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.settings__setting i:hover,
+.settings__setting span:hover {
+  transform: scale(1.2);
+}

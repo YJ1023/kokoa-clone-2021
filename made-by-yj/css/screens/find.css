@@ -167,9 +167,14 @@
   }
 }
 .open-post:hover {
+  border-radius: 5px;
+  padding: 25px;
   cursor: pointer;
-  transform: scale(1.05);
-  box-shadow: -20px -20px 20px rgba(0, 0, 0, 0.5);
+
+  background-color: white;
+  opacity: 0.7;
+
+  box-shadow: 00px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .open-post {
   opacity: 0;
