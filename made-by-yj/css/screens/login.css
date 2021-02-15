@@ -111,7 +111,11 @@
 .login-form__sign-up a:last-child:hover {
   font-weight: 500;
   font-size: 25px;
-  color: rgb(80, 253, 166);
+  color: skyblue;
+
+  padding: 15px 15px;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 /*
 */
@@ -126,3 +130,5 @@
   will-change: transition;
   transition: all 1s ease-in-out;
 }
+/*
+*/

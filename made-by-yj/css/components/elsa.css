@@ -1,0 +1,190 @@
+.elsa-img {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 270px;
+}
+.elsa-ice {
+  width: 40px;
+}
+.elsa-ice-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 120px;
+  left: 70px;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0.5;
+
+  animation: ice 2s ease-in-out infinite;
+}
+
+@keyframes ice {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateY(0) rotateY(360deg);
+  }
+}
+
+/*
+
+*/
+.friends-elsa-background {
+  position: fixed;
+
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/*
+
+*/
+.chats-elsa-img {
+  position: absolute;
+  bottom: 30px;
+  z-index: -1;
+}
+.chats-elsa-ice {
+  width: 40px;
+}
+.chats-elsa-ice-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 160px;
+  left: 70px;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0.5;
+
+  animation: ice 2s ease-in-out infinite;
+}
+
+@keyframes ice {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateY(0) rotateY(360deg);
+  }
+}
+
+/*
+
+*/
+.find-elsa-background {
+  position: fixed;
+  left: 200px;
+  bottom: 30px;
+
+  z-index: -1;
+}
+/*
+
+*/
+.ice-crack {
+  position: fixed;
+  overflow: hidden;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+  z-index: -2;
+  width: 100vw;
+}
+
+/*
+
+*/
+.ice-img {
+  width: 10vw;
+  animation: snow 3s ease-in-out infinite;
+}
+.ice {
+  position: absolute;
+  z-index: -1;
+  top: 50px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.ice-img:nth-child(2),
+.chat-ice:nth-child(2) {
+  animation-delay: 1s;
+}
+.ice-img:nth-child(3),
+.chat-ice:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.ice-img:nth-child(4),
+.chat-ice:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.ice-img:nth-child(6),
+.chat-ice:nth-child(6) {
+  animation-delay: 1s;
+}
+.ice-img:nth-child(7),
+.chat-ice:nth-child(7) {
+  animation-delay: 0.5s;
+}
+.ice-img:nth-child(8),
+.chat-ice:nth-child(8) {
+  animation-delay: 1.5s;
+}
+.ice-img:nth-child(9),
+.chat-ice:nth-child(9) {
+  animation-delay: 1s;
+}
+@keyframes snow {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(400px) translateX(-30px);
+  }
+
+  100% {
+    transform: translateY(900px) translateX(30px);
+    opacity: 0;
+  }
+}
+/*
+*/
+@keyframes chat-snow {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(40vh) translateX(-30px);
+  }
+
+  100% {
+    transform: translateY(110vh) translateX(30px);
+  }
+}
+.chat-ice {
+  width: 10vw;
+  animation: chat-snow 3s ease-in-out infinite;
+}
