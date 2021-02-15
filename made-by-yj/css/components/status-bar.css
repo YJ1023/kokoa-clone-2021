@@ -1,4 +1,7 @@
 .status-bar {
+  height: 30px;
+  overflow: hidden;
+
   box-sizing: border-box;
   padding: 5px;
   display: flex;
