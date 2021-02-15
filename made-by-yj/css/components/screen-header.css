@@ -1,12 +1,15 @@
 .screen-header {
   width: 100%;
   position: fixed;
-  top: 30px;
+  top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   padding: var(--main-screen-padding);
+
+  z-index: 2;
 
   background-color: var(--screen-header__background-color);
 }
