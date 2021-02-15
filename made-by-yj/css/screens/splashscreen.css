@@ -1,9 +1,4 @@
-.friends-splash-screen {
-  padding-bottom: 110px;
-}
-
 #splash-screen {
-  background-color: var(--yellow);
   position: absolute;
   top: 0;
   width: 100vw; /*100vh는 화면의 전체 넓이의 100%*/
@@ -13,10 +8,9 @@
   align-items: center;
   justify-content: center;
 
-  font-size: 132px;
-
   animation: hideSplashScreen 1s ease-in-out forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
+  background-color: white;
 } /*forwards는 애니메이션 마지막 속성값 유지*/
 @keyframes hideSplashScreen {
   from {
@@ -25,5 +19,55 @@
   to {
     opacity: 0; /*보이지 않지만 화면 앞에 있으므로다른 아이콘  클릭 못함*/
     visibility: hidden; /*마우스에 걸리지 않게 처리. 숨기거나 환전히 제거하고 싶으면 JS사용필요*/
+  }
+}
+
+.backgroundbox {
+  width: 100%;
+  height: 100%;
+
+  background-color: bisque;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 1s ease-in-out;
+}
+.backgroundbox:hover {
+  background-color: lightskyblue;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+
+  animation: big 2s ease-in-out;
+}
+.one {
+  animation-delay: 1s;
+  background-color: white;
+}
+.two {
+  animation-delay: 0.5s;
+  background-color: lightskyblue;
+}
+.three {
+  background-color: white;
+}
+@keyframes big {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    overflow: hidden;
+    opacity: 1;
+    transform: scale(8);
   }
 }
